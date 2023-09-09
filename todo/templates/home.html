@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css"/>
+    <title>ToDo App</title>
+</head>
+<body>
+<div class="text-center mt-2">
+    <div class="container">
+        <h1>ToDo App</h1>
+    </div>
+</div>
+<form method="post">
+    {% csrf_token %}
+    <div class="container mt-5">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control me-2" id="title" name="title" aria-describedby="basic-addon1" placeholder="Enter your task..">
+        <button class="btn btn-primary btn-lg" type="submit">Add Task</button>
+        </div>
+    </div>
+</form>
+<div class="container">
+    <ul class="list-group">
+
+    </ul>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.slim.min.js" integrity="sha512-sNylduh9fqpYUK5OYXWcBleGzbZInWj8yCJAU57r1dpSK9tP2ghf/SRYCMj+KsslFkCOt3TvJrX2AV/Gc3wOqA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js" integrity="sha512-TPh2Oxlg1zp+kz3nFA0C5vVC6leG/6mm1z9+mA81MI5eaUVqasPLO8Cuk4gMF4gUfP5etR73rgU/8PNMsSesoQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
