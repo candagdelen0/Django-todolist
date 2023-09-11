@@ -11,3 +11,7 @@ def Home(request):
     data = ToDo.objects.all()
     data_cont = {"data": data}
     return render(request, 'home.html', data_cont)
+
+def Delete(request, id=None):
+    ToDo.objects.get(id=id).delete()
+    return redirect('home')
